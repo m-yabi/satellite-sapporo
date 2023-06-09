@@ -107,8 +107,16 @@ body {
   }
 }
 .header__logo {
+  @include pc {
+    display: flex;
+  }
   @include sp {
     max-width: 240px;
+  }
+}
+.header__lead {
+  @include pc {
+    margin-left: 10px;
   }
 }
 .header__menu__wrap {
