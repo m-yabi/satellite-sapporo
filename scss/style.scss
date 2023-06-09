@@ -1,9 +1,9 @@
-@import '_settings.scss';
-@import '_mediaquery.scss';
+@import "_settings.scss";
+@import "_mediaquery.scss";
 
 body {
-  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo,
-    'Helvetica Neue', Arial, sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   color: #333333;
   &.active {
