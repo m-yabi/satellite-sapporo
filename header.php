@@ -87,7 +87,7 @@
 						<div class="gnav__menu__btn">
 							<a class="download" href="#">
 								<i class="fas fa-download"></i>
-								資料ダウンロードはこちら
+								資料のダウンロード
 							</a>
 							<a class="application" href="#">
 								<i class="fas fa-inbox"></i>
