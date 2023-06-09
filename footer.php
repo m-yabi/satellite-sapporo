@@ -15,6 +15,8 @@
 <footer class="footer">
 	<div class="footer__inner">
 		<ul class="footer__menu__primary">
+			<li><a href="#">会社案内</a></li>
+			<li><a href="#">お申込みについて</a></li>
 			<li><a href="#">お客様の声</a></li>
 			<li><a href="#">バーチャルオフィスコラム</a></li>
 			<li><a href="#">サイトマップ</a></li>
