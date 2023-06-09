@@ -78,12 +78,12 @@ get_header();
 	<!-- contents -->
 	<aside class="side__btn">
 		<a class="side__btn__primary" href="">
-			お申し込みはこちら<br />
-			<span>すぐ使えます</span>
+			ご相談フォーム<br />
+			<span>気軽に相談ください</span>
 			<i class="far fa-arrow-alt-circle-right"></i>
 		</a>
 		<a class="side__btn__secondary" href="">
-			資料ダウンロード <br /><span>こちらから </span>
+			サービス資料 <br /><span>ダウンロードはこちら </span>
 			<i class="far fa-arrow-alt-circle-right"></i>
 		</a>
 	</aside>
