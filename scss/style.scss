@@ -240,7 +240,7 @@ body {
   margin-right: 10px;
 }
 .gnav__menu {
-  margin: 20px 0;
+  margin: 20px 0px 17px 0px;
   @include pc {
     margin-right: 30px;
   }
@@ -264,6 +264,9 @@ body {
 .nav__menu__list {
   &:first-child {
     color: #2864f0;
+  }
+  &:not(:last-child) {
+    margin-right: 5px;
   }
 }
 .openbtn1 {
