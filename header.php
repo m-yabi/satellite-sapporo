@@ -119,10 +119,10 @@
 								<a href="">バーチャルオフィス・住所貸し</a>
 							</li>
 							<li class="nav__menu__list">
-								<a href="">選ばれる特徴</a>
+								<a href="">電話番号取得</a>
 							</li>
 							<li class="nav__menu__list">
-								<a href="">お申し込みの流れ</a>
+								<a href="">選ばれる特徴</a>
 							</li>
 							<li class="nav__menu__list">
 								<a href="">よくあるご質問</a>
