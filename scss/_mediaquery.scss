@@ -1,0 +1,42 @@
+$width1300: 1300px;
+$width1200: 1200px;
+$width1100: 1100px;
+$width1000: 1000px;
+$pc: 901px; // pcのみ
+$sp: 900px; // spのみ
+
+@mixin width1300 {
+  @media (max-width: ($width1300)) {
+    @content;
+  }
+}
+
+@mixin width1200 {
+  @media (max-width: ($width1200)) {
+    @content;
+  }
+}
+
+@mixin width1100 {
+  @media (max-width: ($width1100)) {
+    @content;
+  }
+}
+
+@mixin width1000 {
+  @media (max-width: ($width1000)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}

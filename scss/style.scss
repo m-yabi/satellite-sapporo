@@ -1,0 +1,612 @@
+@import '_settings.scss';
+@import '_mediaquery.scss';
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo,
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  &.active {
+    overflow: hidden;
+  }
+}
+
+.mediaPC {
+  display: none;
+  @include pc {
+    display: block;
+  }
+}
+
+.mediaSP {
+  display: block;
+  @include pc {
+    display: none;
+  }
+}
+
+// -----------------------------------------
+// header
+// -----------------------------------------
+
+.header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  transform: rotateZ(0deg);
+}
+.header__bg {
+  @include width1200 {
+    position: fixed;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    // background: rgb(239, 130, 29);
+    transition: all 0.3s;
+    // transform: translateX(-300px);
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0px);
+    }
+  }
+}
+.header__innner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: #fff;
+  @include width1200 {
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+}
+.header__logo__area {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  @include width1200 {
+    position: static;
+  }
+}
+.header__logo {
+  img {
+    flex: 1;
+    width: 100%;
+  }
+}
+.header__lead {
+  margin-top: 5px;
+  font-size: 13px;
+  @include width1200 {
+    font-size: 11px;
+  }
+  br {
+    @include width1200 {
+      display: none;
+    }
+  }
+}
+.header__title {
+  margin: 5px 0;
+  font-size: 13px;
+  @include width1200 {
+    margin-top: 0;
+  }
+}
+.header__logo {
+  @include sp {
+    max-width: 240px;
+  }
+}
+.header__menu__wrap {
+  @include width1200 {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 99px;
+    left: 20%;
+    width: 100%;
+    padding: 20px 15px 30px;
+    background: #fff;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+  }
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+  }
+  @include sp {
+    top: 86px;
+  }
+}
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  @include width1200 {
+    display: block;
+    width: 100%;
+  }
+}
+.header__phone {
+  margin: 10px 20px 0 0;
+  @include width1200 {
+    margin: 20px 0;
+  }
+}
+.header__phonenumber {
+  display: flex;
+  align-items: center;
+  color: rgb(239, 130, 29);
+  font-size: 30px;
+  font-weight: bold;
+  @include width1200 {
+    justify-content: center;
+  }
+}
+.icon-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  svg {
+    padding: 10px;
+    width: 35px;
+    background-color: rgb(239, 130, 29);
+    border-radius: 50%;
+    fill: #fff;
+  }
+}
+.header__phonenumber__text {
+  font-size: 12px;
+  text-align: center;
+}
+.gnav__menu__btn {
+  display: flex;
+  @include width1200 {
+    justify-content: center;
+  }
+  @include sp {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    border-radius: 0px 0 20px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    @include width1200 {
+      padding: 15px 20px;
+      border-radius: 20px;
+    }
+    @include sp {
+      width: 75%;
+      justify-content: center;
+      margin: auto;
+    }
+    &:hover {
+      opacity: 0.6;
+      transition: all 0.3s;
+    }
+  }
+  i {
+    margin-right: 5px;
+  }
+}
+.download {
+  background: rgb(236, 91, 93);
+  margin-right: 10px;
+  @include sp {
+    margin-right: 0;
+  }
+  &:hover {
+    opacity: 0.6;
+    transition: all 0.3s;
+  }
+}
+.application {
+  background: rgb(239, 130, 29);
+}
+.gnav__menu {
+  margin: 20px 0;
+  @include pc {
+    margin-right: 30px;
+  }
+}
+.nav__menu {
+  display: flex;
+  column-gap: 30px;
+  font-weight: bold;
+  @include width1200 {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  a {
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+.nav__menu__list {
+  &:first-child {
+    color: rgb(239, 130, 29);
+  }
+}
+.openbtn1 {
+  display: none;
+  @include width1200 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    right: 10px;
+    cursor: pointer;
+    width: 27px;
+    height: 23px;
+    &.active {
+      .openbtn {
+        &:nth-of-type(1) {
+          transform: translateY(12px) rotate(-45deg);
+        }
+        &:nth-of-type(2) {
+          opacity: 0;
+        }
+        &:nth-of-type(3) {
+          transform: translateY(-7px) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+.openbtn {
+  @include width1200 {
+    display: inline-block;
+    transition: all 0.4s; /*アニメーションの設定*/
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
+    background: rgb(239, 130, 29);
+    width: 27px;
+    height: 3px;
+    &:nth-of-type(1) {
+      // top: 20px;
+    }
+    &:nth-of-type(2) {
+      // top: 28px;
+    }
+    &:nth-of-type(3) {
+      // top: 36px;
+    }
+  }
+}
+
+// -----------------------------------------
+// side navi
+// -----------------------------------------
+
+.side__btn {
+  display: flex;
+  column-gap: 10px;
+  position: fixed;
+  top: 200px;
+  right: 0;
+  writing-mode: vertical-rl;
+  z-index: 10;
+  margin-bottom: 100px;
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    min-width: 64px;
+    padding: 15px 15px 50px 15px;
+    box-shadow: 0 5px 10px rgba(35, 32, 32, 0.24);
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s;
+    @include width1200 {
+      font-size: 12px;
+    }
+  }
+  i {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+  }
+  span {
+    font-size: 12px;
+  }
+}
+.side__btn__primary {
+  background-color: #ff8924;
+  color: #fff;
+  &:hover {
+    background-color: #fff;
+    color: #ff8924;
+  }
+}
+.side__btn__secondary {
+  background-color: #fff;
+  color: #1458e4;
+  &:hover {
+    color: #fff;
+    background-color: #1458e4;
+  }
+  span {
+    color: #ff8924;
+  }
+}
+
+// -----------------------------------------
+// main
+// -----------------------------------------
+
+main {
+  margin-top: 138px;
+  @include width1200 {
+    margin-top: 86px;
+  }
+}
+
+// -----------------------------------------
+// contact
+// -----------------------------------------
+
+.contact {
+  padding: 50px;
+  background: url(https://341552227d92946d.main.jp/satellito-sapporo/wp-content/themes/satellite-sapporo/images/cta_bg@2x.jpg)
+    no-repeat center center;
+  background-size: cover;
+  @include sp {
+    padding: 30px 15px;
+  }
+}
+
+.contact__inner {
+  @include pc {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+
+.contact__title {
+  margin-bottom: 50px;
+  font-size: 50px;
+  text-align: center;
+  @include sp {
+    margin-bottom: 20px;
+    font-size: 34px;
+  }
+  span {
+    display: block;
+    font-size: 20px;
+    @include sp {
+      font-size: 18px;
+    }
+  }
+}
+
+.contact__lead {
+  margin-bottom: 50px;
+  line-height: 1.8;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  @include sp {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+}
+
+.contact__banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  @include width1000 {
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+  @include sp {
+    row-gap: 10px;
+    max-width: 100%;
+  }
+}
+
+.contact__banner__overview {
+  p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+.contact__logo {
+  img {
+    width: 270px;
+    @include width1100 {
+      width: 240px;
+    }
+  }
+}
+
+.contact__banner__tel {
+  position: relative;
+  z-index: 0;
+  padding-left: 80px;
+  text-align: center;
+  @include width1200 {
+    padding-left: 50px;
+  }
+  @include width1000 {
+    padding-top: 70px;
+    padding-left: 0;
+  }
+  @include sp {
+    padding-top: 50px;
+  }
+  p {
+    font-size: 14px;
+  }
+  span {
+    display: flex;
+    color: rgb(239, 130, 29);
+    font-size: 26px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
+
+.contact__banner__tel__arrow {
+  display: inline-block;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-top: 3px solid #010101;
+  border-right: 3px solid #010101;
+  transform: rotateY(60deg) rotateZ(45deg) translateY(-65%);
+  @include width1200 {
+    left: -10px;
+  }
+  @include width1000 {
+    left: calc(50% - 20px);
+    top: 0;
+    border-top: 2px solid #666666;
+    border-right: 2px solid #666666;
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(136deg);
+  }
+  @include sp {
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+    transform: rotate(135deg);
+  }
+}
+
+.contact__banner__web {
+  margin-left: 20px;
+  padding-left: 50px;
+  border-left: 2px solid #010101;
+  text-align: center;
+  @include width1000 {
+    margin-top: 10px;
+    margin-left: 0;
+    padding-top: 30px;
+    padding-left: 0;
+    border-top: 1px solid #010101;
+    border-left: none;
+  }
+  @include sp {
+    padding-top: 20px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  a {
+    display: block;
+    min-width: 200px;
+    padding: 10px 15px;
+    background: rgb(239, 130, 29);
+    color: #fff;
+    font-size: 18px;
+  }
+}
+
+// -----------------------------------------
+// footer
+// -----------------------------------------
+
+.footer {
+  width: 100%;
+  background-color: #333333;
+  color: #fff;
+  @include pc {
+    padding: 56px 15px 72px;
+  }
+  @include sp {
+    padding: 56px 24px;
+  }
+}
+.footer__inner {
+  @include pc {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+.footer__menu__primary,
+.footer__menu__seconndary {
+  display: flex;
+  @include pc {
+    font-size: 13px;
+    li:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+  @include sp {
+    font-size: 11px;
+    li:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+.footer__menu__primary {
+  padding-bottom: 16px;
+  border-bottom: #464646 solid 1px;
+}
+.footer__logo {
+  max-width: 360px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  @include sp {
+    max-width: 240px;
+    margin: 30px 0 0;
+  }
+}
+.footer__menu__seconndary {
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+.footer__text,
+small {
+  color: #737373;
+  @include pc {
+    font-size: 12px;
+  }
+  @include sp {
+    font-size: 10px;
+  }
+}
