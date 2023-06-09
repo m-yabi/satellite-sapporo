@@ -36,6 +36,9 @@
 		<p class="footer__text">
 			サイト内で記載されている会社名および商品・製品・サービス名（ロゴマーク等を含む）は、各社の商標または各権利者の商標です
 		</p>
+		<p class="footer__address">
+			バーチャルオフィスのサテライト東京：東京都渋谷区神泉町10
+		</p>
 		<small>© Satellite Office OKINAWA.</small>
 	</div>
 </footer>
