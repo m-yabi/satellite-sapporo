@@ -39,7 +39,7 @@
 		<p class="footer__address">
 			バーチャルオフィスのサテライト東京：東京都渋谷区神泉町10
 		</p>
-		<small>© Satellite Office OKINAWA.</small>
+		<small>© Satellite Office TOKYO.</small>
 	</div>
 </footer>
 
