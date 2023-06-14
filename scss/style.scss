@@ -435,13 +435,13 @@ main {
   text-align: center;
   @include sp {
     margin-bottom: 20px;
-    font-size: 34px;
+    font-size: 27px;
   }
   span {
     display: block;
     font-size: 18px;
     @include sp {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 }
