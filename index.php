@@ -65,7 +65,7 @@ get_header();
 
 							0120-900-105
 						</span>
-						<p>受付時間9:00〜18:00</p>
+						<p>受付時間 9:00〜18:00</p>
 					</div>
 					<div class="contact__banner__web">
 						<p>WEBからのお問合せ</p>
