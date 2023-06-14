@@ -603,6 +603,7 @@ main {
 .footer__menu__primary,
 .footer__menu__seconndary {
   display: flex;
+  flex-wrap: wrap;
   @include pc {
     font-size: 13px;
     li:not(:last-child) {
@@ -633,7 +634,6 @@ main {
 }
 .footer__menu__seconndary {
   margin-bottom: 24px;
-  flex-wrap: wrap;
   li:not(:last-child) {
     margin-bottom: 5px;
   }
