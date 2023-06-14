@@ -485,6 +485,7 @@ main {
   @include sp {
     row-gap: 10px;
     max-width: 100%;
+    padding: 43px 30px;
   }
 }
 
@@ -520,7 +521,7 @@ main {
     padding-left: 0;
   }
   @include sp {
-    padding-top: 50px;
+    padding-top: 0;
   }
   p {
     font-size: 14px;
