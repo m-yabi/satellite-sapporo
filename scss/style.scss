@@ -164,6 +164,7 @@ body {
   color: #e60b2f;
   font-size: 35px;
   font-weight: bold;
+  margin-top: 2px;
   @include width1200 {
     justify-content: center;
   }
@@ -184,7 +185,6 @@ body {
 .header__phonenumber__text {
   font-size: 12px;
   text-align: center;
-  margin-top: 2px;
 }
 .gnav__menu__btn {
   display: flex;
