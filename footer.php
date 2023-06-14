@@ -15,11 +15,11 @@
 <footer class="footer">
 	<div class="footer__inner">
 		<ul class="footer__menu__primary">
-			<li><a href="#">会社案内</a></li>
-			<li><a href="#">お申込みについて</a></li>
-			<li><a href="#">お客様の声</a></li>
-			<li><a href="#">バーチャルオフィスコラム</a></li>
-			<li><a href="#">サイトマップ</a></li>
+			<li><a href="/company/">会社案内</a></li>
+			<li><a href="/abouotapplication/">お申込みについて</a></li>
+			<li><a href="/customer/">お客様の声</a></li>
+			<li><a href="/columns/">バーチャルオフィスコラム</a></li>
+			<li><a href="/sitemap/">サイトマップ</a></li>
 		</ul>
 		<h2 class="footer__logo">
 			<?php
@@ -27,11 +27,11 @@
 			?>
 		</h2>
 		<ul class="footer__menu__seconndary">
-			<li><a href="#">特定商取引法に基づく表示</a></li>
-			<li><a href="#">犯罪収益移転防止法</a></li>
-			<li><a href="#">反社会的勢力排除に向けた取組み</a></li>
-			<li><a href="#">セキュリティポリシー</a></li>
-			<li><a href="#">プライバシーポリシー</a></li>
+			<li><a href="/specified/">特定商取引法に基づく表示</a></li>
+			<li><a href="/prevention/">犯罪収益移転防止法</a></li>
+			<li><a href="/program/">反社会的勢力排除に向けた取組み</a></li>
+			<li><a href="/security/">セキュリティポリシー</a></li>
+			<li><a href="/privacy/">プライバシーポリシー</a></li>
 		</ul>
 		<p class="footer__text">
 			サイト内で記載されている会社名および商品・製品・サービス名（ロゴマーク等を含む）は、各社の商標または各権利者の商標です

@@ -85,11 +85,11 @@
 							<p class="header__phonenumber__text">受付時間9:00〜18:00</p>
 						</div>
 						<div class="gnav__menu__btn">
-							<a class="download" href="#">
+							<a class="download" href="/download/">
 								<i class="fas fa-download"></i>
 								資料のダウンロード
 							</a>
-							<a class="application" href="#">
+							<a class="application" href="/application/">
 								<i class="fas fa-inbox"></i>
 								お申し込み
 							</a>
@@ -116,19 +116,19 @@
 								<a href="">ホーム</a>
 							</li>
 							<li class="nav__menu__list">
-								<a href="">バーチャルオフィス・住所貸し</a>
+								<a href="/virtualoffice/">バーチャルオフィス・住所貸し</a>
 							</li>
 							<li class="nav__menu__list">
-								<a href="">電話番号取得</a>
+								<a href="/telplan/">電話番号取得</a>
 							</li>
 							<li class="nav__menu__list">
-								<a href="">選ばれる特徴</a>
+								<a href="/merit/">選ばれる特徴</a>
 							</li>
 							<li class="nav__menu__list">
-								<a href="">よくあるご質問</a>
+								<a href="/faq/">よくあるご質問</a>
 							</li>
 							<li class="nav__menu__list">
-								<a href="">お問合せ</a>
+								<a href="/otoiawase/">お問合せ</a>
 							</li>
 						</ul>
 					</nav>
