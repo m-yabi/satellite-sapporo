@@ -72,6 +72,9 @@ body {
     justify-content: space-between;
     padding: 10px 15px;
   }
+  @include sp {
+    padding: 8px 15px;
+  }
 }
 .header__logo__area {
   position: absolute;
@@ -270,6 +273,9 @@ body {
 .nav__menu__list {
   &:first-child {
     color: #2864f0;
+    @include sp {
+      display: none;
+    }
   }
   &:not(:last-child) {
     margin-right: 5px;
@@ -363,6 +369,9 @@ body {
   span {
     font-size: 12px;
     padding-top: 10px;
+  }
+  @include sp {
+    display: none;
   }
 }
 .side__btn__primary {
