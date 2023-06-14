@@ -62,7 +62,7 @@
 						the_custom_logo();
 						?>
 						<p class="header__lead">
-							格安バーチャルオフィス<br class="" />
+							格安バーチャルオフィス
 							サテライト東京
 						</p>
 					</div>

@@ -81,12 +81,7 @@ body {
     position: static;
   }
 }
-.header__logo {
-  img {
-    flex: 1;
-    width: 100%;
-  }
-}
+
 .header__lead {
   margin-top: 5px;
   font-size: 13px;
@@ -107,8 +102,13 @@ body {
   }
 }
 .header__logo {
+  img {
+    flex: 1;
+    width: 100%;
+  }
   @include pc {
     display: flex;
+    align-items: center;
   }
   @include sp {
     max-width: 240px;
