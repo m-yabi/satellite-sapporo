@@ -99,6 +99,7 @@ body {
   font-size: 13px;
   @include width1200 {
     margin-top: 0;
+    font-size: 11px;
   }
 }
 .header__logo {
