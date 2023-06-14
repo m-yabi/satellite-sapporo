@@ -493,6 +493,9 @@ main {
     margin-top: 10px;
     font-size: 14px;
   }
+  @include sp {
+    display: none;
+  }
 }
 
 .contact__logo {
@@ -554,10 +557,7 @@ main {
     transform: rotateX(60deg) rotateY(0deg) rotateZ(136deg);
   }
   @include sp {
-    width: 30px;
-    height: 30px;
-    border-width: 1px;
-    transform: rotate(135deg);
+    display: none;
   }
 }
 
