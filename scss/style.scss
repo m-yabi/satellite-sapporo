@@ -99,6 +99,8 @@ body {
   font-size: 13px;
   @include width1200 {
     margin-top: 0;
+  }
+  @include sp {
     font-size: 11px;
   }
 }
