@@ -25,10 +25,13 @@ get_header();
 					Contact
 					<span>お問合せ</span>
 				</h2>
-				<p class="contact__lead">
+				<p class="contact__lead__pc">
 					初めてバーチャルオフィスをご利用される方など、<br />
 					「詳しいサービス内容を聞きたい」といったご要望があれば、<br />
 					お気軽にこちらからご相談ください。
+				</p>
+				<p class="contact__lead__sp">
+					バーチャルオフィスをご検討中の方へ
 				</p>
 				<div class="contact__banner">
 					<div class="contact__banner__overview">
