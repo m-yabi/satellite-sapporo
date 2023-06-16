@@ -40,7 +40,7 @@ body {
   transform: rotateZ(0deg);
 }
 .header__bg {
-  @include width1200 {
+  @include width1300 {
     position: fixed;
     z-index: 1;
     opacity: 0;
@@ -68,7 +68,7 @@ body {
   z-index: 1;
   width: 100%;
   background: #fff;
-  @include width1200 {
+  @include width1300 {
     justify-content: space-between;
     padding: 10px 15px;
   }
@@ -80,7 +80,7 @@ body {
   position: absolute;
   top: 0;
   left: 145px;
-  @include width1200 {
+  @include width1300 {
     position: static;
   }
 }
@@ -88,11 +88,11 @@ body {
 .header__lead {
   margin-top: 5px;
   font-size: 13px;
-  @include width1200 {
+  @include width1300 {
     font-size: 11px;
   }
   br {
-    @include width1200 {
+    @include width1300 {
       display: none;
     }
   }
@@ -103,7 +103,7 @@ body {
 .header__title {
   margin: 5px 0;
   font-size: 13px;
-  @include width1200 {
+  @include width1300 {
     margin-top: 0;
   }
   @include sp {
@@ -129,7 +129,7 @@ body {
   }
 }
 .header__menu__wrap {
-  @include width1200 {
+  @include width1300 {
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -155,14 +155,14 @@ body {
 .header__menu {
   display: flex;
   justify-content: flex-end;
-  @include width1200 {
+  @include width1300 {
     display: block;
     width: 100%;
   }
 }
 .header__phone {
   margin: 10px 25px 0 0;
-  @include width1200 {
+  @include width1300 {
     margin: 20px 0;
   }
   @include sp {
@@ -177,7 +177,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   margin-top: 2px;
-  @include width1200 {
+  @include width1300 {
     justify-content: center;
   }
 }
@@ -200,7 +200,7 @@ body {
 }
 .gnav__menu__btn {
   display: flex;
-  @include width1200 {
+  @include width1300 {
     justify-content: center;
   }
   @include sp {
@@ -213,7 +213,7 @@ body {
     padding: 25px 20px;
     border-radius: 0px 0 20px 20px;
     font-size: 15px;
-    @include width1200 {
+    @include width1300 {
       padding: 15px 20px;
       border-radius: 20px;
     }
@@ -261,7 +261,7 @@ body {
   display: flex;
   column-gap: 30px;
   font-weight: bold;
-  @include width1200 {
+  @include width1300 {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
@@ -286,7 +286,7 @@ body {
 }
 .openbtn1 {
   display: none;
-  @include width1200 {
+  @include width1300 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -313,13 +313,13 @@ body {
   }
 }
 .openbtn {
-  @include width1200 {
+  @include width1300 {
     display: inline-block;
     transition: all 0.4s; /*アニメーションの設定*/
     // position: absolute;
     // left: 50%;
     // transform: translateX(-50%);
-    background: rgb(239, 130, 29);
+    background: #1885f2;
     width: 27px;
     height: 3px;
     &:nth-of-type(1) {
@@ -358,7 +358,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     transition: all 0.3s;
-    @include width1200 {
+    @include width1300 {
       font-size: 12px;
     }
   }
@@ -403,7 +403,7 @@ body {
 
 main {
   margin-top: 138px;
-  @include width1200 {
+  @include width1300 {
     margin-top: 86px;
   }
 }
@@ -513,7 +513,7 @@ main {
   z-index: 0;
   padding-left: 80px;
   text-align: center;
-  @include width1200 {
+  @include width1300 {
     padding-left: 50px;
   }
   @include width1000 {
@@ -547,7 +547,7 @@ main {
   border-top: 3px solid #010101;
   border-right: 3px solid #010101;
   transform: rotateY(60deg) rotateZ(45deg) translateY(-65%);
-  @include width1200 {
+  @include width1300 {
     left: -10px;
   }
   @include width1000 {
