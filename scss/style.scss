@@ -240,7 +240,12 @@ body {
   margin-right: 10px;
   border: #666666 1px solid;
   color: #666666;
-
+  @include pc {
+    border-top: none;
+  }
+  @include width1300 {
+    border: #666666 1px solid;
+  }
   @include sp {
     margin-right: 0;
   }
