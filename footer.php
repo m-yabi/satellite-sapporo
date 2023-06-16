@@ -22,9 +22,7 @@
 			<li><a href="/sitemap/">サイトマップ</a></li>
 		</ul>
 		<h2 class="footer__logo">
-			<?php
-			the_custom_logo();
-			?>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logowhite.png">
 		</h2>
 		<ul class="footer__menu__seconndary">
 			<li><a href="/specified/">特定商取引法に基づく表示</a></li>
