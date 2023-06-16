@@ -69,7 +69,7 @@ get_header();
 					</div>
 					<div class="contact__banner__web">
 						<p>WEBからのお問合せ</p>
-						<a href="">お問合せフォーム</a>
+						<a href="/otoiawase/">お問合せフォーム</a>
 					</div>
 				</div>
 				<!-- contact__banner -->
