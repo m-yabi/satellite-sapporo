@@ -179,7 +179,6 @@ body {
   color: #e60b2f;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 2px;
   @include width1300 {
     justify-content: center;
   }
@@ -196,6 +195,10 @@ body {
     border-radius: 50%;
     fill: #fff;
   }
+}
+.tel__number {
+  position: relative;
+  top: 2px;
 }
 .header__phonenumber__text {
   font-size: 12px;
