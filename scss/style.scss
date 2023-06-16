@@ -148,8 +148,11 @@ body {
     visibility: visible;
     left: 0;
   }
+  @include width1300 {
+    top: 94px;
+  }
   @include sp {
-    top: 86px;
+    top: 78.8px;
   }
 }
 .header__menu {
